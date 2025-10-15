@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dribbble Clone - Simplified</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background: #f798e9;
+      color: #dacdcd;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgb(200, 230, 220);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dc57ba;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #dbe91b;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #f2a074;
+      font-size: 0.95rem;
+    }
+
+    nav button {
+      background: #dbcb95;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #3214b8;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #128c2c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">dribbble</div>
+    <nav>
+      <a href="#">Inspiration</a>
+      <a href="#">Find Work</a>
+      <a href="#">Learn Design</a>
+      <a href="#">Go Pro</a>
+      <a href="#">Sign In</a>
+      <button>Sign Up</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Explore the world’s leading designers</h1>
+    <p class="subtitle">Shots from popular designers and creatives</p>
+
+    <div class="grid">
+      <div class="card"><img src="cartoon1.jpg" alt="Shot 1"></div>
+      <div class="card"><img src="cartoon2.jpg" alt="Shot 2"></div>
+      <div class="card"><img src="cartoon3.jpg" alt="Shot 3"></div>
+      <div class="card"><img src="phone1.png" alt="Shot 4"></div>
+      <div class="card"><img src="food.jpeg" alt="Shot 5"></div>
+      <div class="card"><img src="nature1.jpg" alt="Shot 6"></div>
+      <div class="card"><img src="nature2.jpg" alt="Shot 7"></div>
+      <div class="card"><img src="nature3.jpg" alt="Shot 8"></div>
+      <div class="card"><img src="nature4.jpg" alt="Shot 9"></div>
+      <div class="card"><img src="nature5.webp" alt="Shot 10"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dribbble Clone. Built for demo purposes.</p>
+  </footer>
+
+</body>
+</html>
